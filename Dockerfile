@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 
 ARG RS_VERSION
-ENV RS_VERSION $RS_VERSION
+ENV RS_VERSION 3.6.2
 RUN echo "rabbitmq-server version = ${RS_VERSION}"
 
 RUN sed -i 's/archive.ubuntu.com/ftp.daum.net/g' /etc/apt/sources.list
