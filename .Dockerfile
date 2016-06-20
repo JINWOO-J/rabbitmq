@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-ARG RS_VERSION
+#ARG RS_VERSION
 ENV RS_VERSION __RS_VERSION__
 RUN echo "rabbitmq-server version = ${RS_VERSION}"
 
